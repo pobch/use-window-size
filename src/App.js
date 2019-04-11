@@ -8,14 +8,19 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #333;
+`
+
+const H1 = styled.h1`
+  color: hotpink;
 `
 
 const App = () => {
   const { width, height } = useWindowResize()
   return (
     <Container>
-      <h1>Window width is: {width}</h1>
-      <h1>Window height is: {height}</h1>
+      <H1>Window width is: {width}</H1>
+      <H1>Window height is: {height}</H1>
     </Container>
   )
 }
